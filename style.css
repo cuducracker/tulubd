@@ -1,0 +1,32 @@
+#comment-section {
+
+  width: 500px;
+
+  margin: 0 auto;
+
+}
+
+.comments {
+
+  list-style-type: none;
+
+  margin: 0;
+
+  padding: 0;
+
+}
+
+.comment {
+
+  margin-bottom: 10px;
+
+}
+
+.comment-text {
+
+  border: 1px solid #ccc;
+
+  padding: 10px;
+
+}
+
