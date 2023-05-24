@@ -1,0 +1,42 @@
+// This function is called when the user submits the comment form
+
+function submitComment() {
+
+  // Get the comment text from the form
+
+  var commentText = document.getElementById("comment-text").value;
+
+  // Check if the comment text is empty
+
+  if (commentText === "") {
+
+    alert("Please enter your comment");
+
+    return;
+
+  }
+
+  // Create a new comment element
+
+  var comment = document.createElement("li");
+
+  // Add the comment text to the comment element
+
+  var commentTextNode = document.createTextNode(commentText);
+
+  comment.appendChild(commentTextNode);
+
+  // Add the comment element to the comments list
+
+  document.querySelector(".comments").appendChild(comment);
+
+  // Clear the comment text input
+
+  document.getElementById("comment-text").value = "";
+
+}
+
+// Attach the submitComment() function to the submit event of the comment form
+
+document.getElementById("comment-form").addEventListener("submit", submitComment);
+
